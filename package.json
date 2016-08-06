@@ -4,7 +4,8 @@
   "description": "Application to help select champions for role or position",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+	"start": "node_modules/.bin/supervisor app",
+	"test": "node_modules/.bin/mocha -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/mattcarlson3226/leagueapp/issues"
   },
-  "homepage": "https://github.com/mattcarlson3226/leagueapp#readme"
+  "homepage": "https://github.com/mattcarlson3226/leagueapp#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+	"supervisor": "0.4.x",
+	"mocha": "*",
+    "should": ">= 0.0.1"
+  }
 }
